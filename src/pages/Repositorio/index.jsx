@@ -97,34 +97,38 @@ export default function Repositorio() {
             </Ownre>
 
             <FilterList active={filterIndex}>
-
-                {filters.map((filter, index) => (
-                    <button type='button' key={filter.label} onClick={() => { handleFilter(index) }}>
-                        {filter.label}
-                    </button>
-                ))}
-
+                {filters && filters.length > 0 ? (
+                    filters.map((filter, index) => (
+                        <button type='button' key={filter.label} onClick={() => { handleFilter(index) }}>
+                            {filter.label}
+                        </button>
+                    ))
+                ) : (
+                    <p>No filters available.</p>
+                )}
             </FilterList>
 
 
+
             <IssuesList>
-
-                {issues.map((issue =>
-                    <li key={String(issue.id)} >
-                        <img src={issue.user.avatar_url} alt={issue.user.login} />
-                        <div>
-                            <strong>
-                                <a href={issue.html_url}>{issue.title}</a>
-                                {issue.labels.map(label => (
-                                    <span key={String(label.id)}>{label.name}</span>
-                                ))}
-
-                            </strong>
-                            <p>User name: {issue.user.login}</p>
-                        </div>
-                    </li>
-                ))}
-
+                {issues && issues.length > 0 ? (
+                    issues.map((issue) => (
+                        <li key={String(issue.id)}>
+                            <img src={issue.user.avatar_url} alt={issue.user.login} />
+                            <div>
+                                <strong>
+                                    <a href={issue.html_url}>{issue.title}</a>
+                                    {issue.labels.map((label) => (
+                                        <span key={String(label.id)}>{label.name}</span>
+                                    ))}
+                                </strong>
+                                <p>User name: {issue.user.login}</p>
+                            </div>
+                        </li>
+                    ))
+                ) : (
+                    <li>No issues found.</li>
+                )}
             </IssuesList>
 
             <PageActions>
