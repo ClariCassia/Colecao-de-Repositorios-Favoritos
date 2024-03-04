@@ -26,14 +26,13 @@ h1 {
     color: #0D2636
 }
 
-P{
+p{
     margin-top: 5px;
     font-size: 14px;
     text-align: center;
     line-height: 1.4;
     max-width: 400px;
 }
-
 
 `;
 
@@ -49,8 +48,8 @@ export const BackButton = styled(Link)`
     border: 0;
     outline: 0;
     background: transparent;
-
  `
+ 
 export const IssuesList = styled.ul`
   margin-top: 30px;
   padding-top: 30px;

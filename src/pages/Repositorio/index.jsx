@@ -72,7 +72,6 @@ export default function Repositorio() {
         setFilterIndex(index)
     }
 
-
     if (loading) {
         return (
             <Loading>
