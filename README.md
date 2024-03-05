@@ -29,7 +29,7 @@ Além disso, adicionei filtros avançados e sistema de paginação para aprimora
 
 Este projeto certamente contribuiu para minha bagagem como desenvolvedor React.
 
-Para ver o projeto pronto [clique aqui ] 🚀 (https://clari-cassia-projetcs-formulario-cadastro-react.vercel.app/)
-<br>
+Para ver o projeto pronto [clique aqui ](https://clari-cassia-projetcs-formulario-cadastro-react.vercel.app/)
+🚀
 
 Com ❤️ por [Clarissa de Cássia]([https://gist.github.com/lohhans](https://github.com/ClariCassia)https://github.com/ClariCassia) 😊
