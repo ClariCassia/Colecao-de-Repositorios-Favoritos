@@ -126,7 +126,6 @@ strong{
 
  `
 
-
 export const PageActions = styled.div`
 display: flex;
 justify-content: space-between;

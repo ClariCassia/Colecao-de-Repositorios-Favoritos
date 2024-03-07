@@ -20,8 +20,6 @@ export default function Repositorio() {
     ])
     const [filterIndex, setFilterIndex] = useState(0)
 
-
-
     useEffect(() => {
 
         async function load() {
@@ -108,8 +106,6 @@ export default function Repositorio() {
                     <p>No filters available.</p>
                 )}
             </FilterList>
-
-
 
             <IssuesList>
                 {issues && issues.length > 0 ? (

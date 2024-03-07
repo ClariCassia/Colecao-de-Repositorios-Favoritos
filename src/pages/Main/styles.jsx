@@ -24,7 +24,7 @@ display: flex;
 
 input{
 flex: 1;
-border: 1px solid ${props =>(props.onError ? '#ff0000' : '#eee')};
+border: 1px solid ${props => (props.onError ? '#ff0000' : '#eee')};
 padding: 10px 15px;
 border-radius: 4px;
 font-size: 17px;
@@ -63,8 +63,8 @@ svg{
 }
 
 `
-    }
-`;
+}
+`
 
 export const RepositoriesList = styled.ul`
 list-style: none;
@@ -108,8 +108,6 @@ export const ErrorSubmit = styled.p`
 color: red;
 font-size: 12px;
 padding: 5px;
-
-
 `
 
 

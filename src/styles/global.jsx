@@ -16,9 +16,7 @@ body{
     background-color: #0D2636 ;
     font-size: 14px;
     -webkit-font-smoothing: antialiased !important;
-    padding: 20px;
-
-   
+    padding: 20px;   
 }
 
 body, input, button{
