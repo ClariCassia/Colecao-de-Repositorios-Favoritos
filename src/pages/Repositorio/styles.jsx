@@ -49,8 +49,20 @@ export const BackButton = styled(Link)`
     outline: 0;
     background: transparent;
  `
- 
+
 export const IssuesList = styled.ul`
+
+@media (max-width: 768px) {
+    a{
+        font-size: 10px;       
+    
+    }
+
+    strong{       
+        flex-direction:column;
+        gap:10px
+    }
+  }
   margin-top: 30px;
   padding-top: 30px;
   border-top: 1px solid #eee;
@@ -78,7 +90,8 @@ div{
 
     p{
         margin-top: 10px;
-        font-size: 12px;     
+        font-size: 12px;    
+    
     }
 }
 
@@ -108,9 +121,11 @@ strong{
     padding: 4px 7px;
     text-align:center
  }
+    
+ }
 
-}
  `
+
 
 export const PageActions = styled.div`
 display: flex;
@@ -141,7 +156,7 @@ button{
     border-radius: 4px;
     margin: 0 3px;
     
-    &:nth-child(${props=> props.active +1}){
+    &:nth-child(${props => props.active + 1}){
         background: #0071db ;
         color:#fff
     }
